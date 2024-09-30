@@ -36,7 +36,7 @@
                     <option>--Pilih Tujuan--</option>
                     <?php
                     $tujuan = "SELECT * FROM keberangkatan";
-                    $queryTujuan = mysqli_query($conn,$tujuan);
+                    $queryTujuan = mysqli_query($conn, $tujuan);
                     while ($dataTujuan = mysqli_fetch_array($queryTujuan)) { ?>
                         <option value="<?php echo $dataTujuan['id_berangkat'] ?>"><?php echo $dataTujuan["tujuan"] ?> | <?php echo $dataTujuan["jadwal"] ?>
                         </option>
@@ -80,29 +80,30 @@
         </div>
     </form>
 
-        <!-- Javascript untuk memanggil Kelas dari Tujuan dan Jumlah Pembayaran dari penumpang&kelas -->
-        <script type="text/javascript">
-            $( "#tujuan" ).change(function() {
-              var id_berangkat = $("#tujuan").val();
-              console.log(id_berangkat);
-              $.ajax({
+    <!-- Javascript untuk memanggil Kelas dari Tujuan dan Jumlah Pembayaran dari penumpang&kelas -->
+    <script type="text/javascript">
+        $("#tujuan").change(function() {
+            var id_berangkat = $("#tujuan").val();
+            console.log(id_berangkat);
+            $.ajax({
                 url: "./ajax_bus.php?id_berangkat=" + id_berangkat,
-                success: function(result){
-                  $("#kelas").html(result);
-                }
-              });
-            });
-
-            $( "#penumpang" ).change(function() {
-              var id_kelas = $("#kelas").val();
-              var penumpang = $("#penumpang").val();
-              console.log(penumpang);
-              $.ajax({
-                url: "./ajax_total.php?id_kelas=" + id_kelas + "&penumpang=" + penumpang,
-                success: function(result){
+                success: function(result) {
                     console.log(result);
-                  $("#total").val(result);
+                    $("#kelas").html(result);
                 }
-              });
             });
-        </script>
+        });
+
+        $("#penumpang").change(function() {
+            var id_kelas = $("#kelas").val();
+            var penumpang = $("#penumpang").val();
+            console.log(penumpang);
+            $.ajax({
+                url: "./ajax_total.php?id_kelas=" + id_kelas + "&penumpang=" + penumpang,
+                success: function(result) {
+                    console.log(result);
+                    $("#total").val(result);
+                }
+            });
+        });
+    </script>

@@ -32,7 +32,7 @@
                 <img src="images/logo.png" class="img-responsive pull-left" style="max-height:150px;display:inline">
             </div>
             <br>
-            <div class="col-md-8">
+            <!-- <div class="col-md-8">
                 <font size="6"><b>
                         <p class="text-center">P.O. Puspa jaya Pondok Ungu</p>
                 </font>
@@ -42,7 +42,7 @@
                 <b>
                     <p class="text-center">Phone : (021) 889-586-31</p>
                 </b>
-            </div>
+            </div> -->
             <br>
             <style type="text/css">
                 hr.style2 {
@@ -64,7 +64,7 @@
     <div class="row">
         <div class="col-md-12">
             <h3>
-                <center><b>Tiket</b></center>
+                <center><b>E-Tiket</b></center>
             </h3>
             <br><br>
         </div>

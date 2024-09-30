@@ -7,13 +7,16 @@
 
         <div class="carousel-inner" role="listbox">
             <div class="item active" align="center">
-                <img src="images/bis1(3).jpg" alt="bis" width="1242" height="200">
+                <img src="images/1.jpg" alt="bis" width="1242" height="200">
             </div>
             <div class="item" align="center">
-                <img src="images/bis3(1).jpg" alt="bis" width="1242" height="200">
+                <img src="images/2.jpg" alt="bis" width="1242" height="200">
             </div>
             <div class="item" align="center">
-                <img src="images/bis4.jpg" alt="bis" width="1242" height="200">
+                <img src="images/3.jpg" alt="bis" width="1242" height="200">
+            </div>
+            <div class="item" align="center">
+                <img src="images/4.jpg" alt="bis" width="1242" height="200">
             </div>
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -25,5 +28,3 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
-

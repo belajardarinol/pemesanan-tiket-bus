@@ -225,7 +225,7 @@ else $halaman = "index";
 							</p>
 							<p>
 								<a href="index.php?halaman=about" style="color: #FFFFFF">
-									ABOUT P.O SUMBER ALAM
+									ABOUT P.O PUSPA JAYA
 								</a>
 							</p>
 						</h5>

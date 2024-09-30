@@ -1,7 +1,8 @@
 <?php
 
 include 'config/koneksi.php';
-
+// locale_set_default('id_ID');
+date_default_timezone_set('Asia/Jakarta');
 session_start();
 
 if (isset($_GET['halaman'])) $halaman = $_GET['halaman'];
@@ -216,7 +217,7 @@ else $halaman = "index";
 							</p>
 							<p>
 								<a href="index.php?halaman=about" style="color: #FFFFFF">
-									ABOUT P.O SUMBER ALAM
+									ABOUT P.O PUSPA JAYA
 								</a>
 							</p>
 						</h5>
@@ -229,7 +230,7 @@ else $halaman = "index";
 				<hr>
 				<font color="#FFFFFF">
 					<p>
-						Copyright &copy; Andrea D. 2017
+						Copyright &copy; Sobat Gurun. 2024
 					</p>
 				</font>
 			</div>
